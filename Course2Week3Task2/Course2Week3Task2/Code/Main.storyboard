@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="xfL-Tr-t0W">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="S7c-UX-tOr">
+            <objects>
+                <viewController id="gRB-ib-7Fl" customClass="TableViewController" customModule="Course2Week3Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pM5-j7-TDe"/>
+                        <viewControllerLayoutGuide type="bottom" id="5s5-fL-vQ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BZS-2o-KaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bLd-1s-vAe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oEw-aa-yc1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="qdX-j1-4oi" imageView="LXv-4k-mec" rowHeight="60" style="IBUITableViewCellStyleDefault" id="HLz-UZ-g4c">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HLz-UZ-g4c" id="Hh8-NH-NZJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdX-j1-4oi">
+                                                    <rect key="frame" x="150" y="0.0" width="210" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="breakfast.jpg" id="LXv-4k-mec">
+                                                    <rect key="frame" x="15" y="0.0" width="120" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5s5-fL-vQ6" firstAttribute="top" secondItem="bLd-1s-vAe" secondAttribute="bottom" id="1Oh-ss-MgH"/>
+                            <constraint firstItem="bLd-1s-vAe" firstAttribute="leading" secondItem="BZS-2o-KaQ" secondAttribute="leading" id="8fz-QH-vQf"/>
+                            <constraint firstAttribute="trailing" secondItem="bLd-1s-vAe" secondAttribute="trailing" id="9QX-AQ-eWU"/>
+                            <constraint firstItem="bLd-1s-vAe" firstAttribute="top" secondItem="pM5-j7-TDe" secondAttribute="bottom" id="me6-wf-Dwd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoTableView" destination="bLd-1s-vAe" id="OI9-oj-NrS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEQ-Ni-eAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602.39999999999998" y="-418.74062968515744"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="BHU-oz-ch3">
+            <objects>
+                <viewController id="xfL-Tr-t0W" customClass="CollectionViewController" customModule="Course2Week3Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2zD-F2-LLs"/>
+                        <viewControllerLayoutGuide type="bottom" id="JdV-dn-LE2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b6H-Hc-YTy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-j8-GaV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="QWc-ez-yRX" customClass="CustomFlowLayout" customModule="Course2Week3Task2" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9iO-j8-GaV" firstAttribute="leading" secondItem="b6H-Hc-YTy" secondAttribute="leading" id="3sX-lU-PgM"/>
+                            <constraint firstAttribute="trailing" secondItem="9iO-j8-GaV" secondAttribute="trailing" id="Hrd-gC-mJA"/>
+                            <constraint firstItem="JdV-dn-LE2" firstAttribute="top" secondItem="9iO-j8-GaV" secondAttribute="bottom" id="b6D-rK-OME"/>
+                            <constraint firstItem="9iO-j8-GaV" firstAttribute="top" secondItem="2zD-F2-LLs" secondAttribute="bottom" id="cHg-H5-PP4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="9iO-j8-GaV" id="uoC-do-ff5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aio-ft-aeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="-418.74062968515744"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="breakfast.jpg" width="153.60000610351562" height="76.800003051757812"/>
+    </resources>
+</document>
